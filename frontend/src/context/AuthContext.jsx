@@ -1,7 +1,7 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast'
-import api from '../api/axios'
+import api, { AUTH_UNAUTHORIZED_EVENT } from '../api/axios'
 
 const AuthContext = createContext(null)
 
@@ -11,6 +11,20 @@ export function AuthProvider({ children }) {
     return stored ? JSON.parse(stored) : null
   })
   const navigate = useNavigate()
+
+  useEffect(() => {
+    const handleUnauthorized = () => {
+      setUser(null)
+
+      if (window.location.pathname !== '/login') {
+        toast.error('Your session has expired. Please log in again.')
+        navigate('/login', { replace: true })
+      }
+    }
+
+    window.addEventListener(AUTH_UNAUTHORIZED_EVENT, handleUnauthorized)
+    return () => window.removeEventListener(AUTH_UNAUTHORIZED_EVENT, handleUnauthorized)
+  }, [navigate])
 
   const register = async (formData) => {
     await api.post('/auth/register', formData)

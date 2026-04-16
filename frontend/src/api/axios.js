@@ -1,9 +1,13 @@
 import axios from 'axios'
 
+export const AUTH_UNAUTHORIZED_EVENT = 'auth:unauthorized'
+
 const api = axios.create({
   baseURL: 'http://localhost:8000/api/v1',
   headers: { 'Content-Type': 'application/json' },
 })
+
+const AUTH_EXCLUDED_401_PATHS = ['/auth/login', '/auth/register', '/auth/logout']
 
 // Attach token to every request
 api.interceptors.request.use((config) => {
@@ -18,11 +22,14 @@ api.interceptors.request.use((config) => {
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response?.status === 401) {
+    const requestUrl = error.config?.url || ''
+    const shouldBypassGlobal401 = AUTH_EXCLUDED_401_PATHS.some((path) => requestUrl.includes(path))
+
+    if (error.response?.status === 401 && !shouldBypassGlobal401) {
       localStorage.removeItem('access_token')
       localStorage.removeItem('refresh_token')
       localStorage.removeItem('user')
-      window.location.href = '/login'
+      window.dispatchEvent(new Event(AUTH_UNAUTHORIZED_EVENT))
     }
     return Promise.reject(error)
   }
