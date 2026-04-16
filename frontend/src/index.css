@@ -1,0 +1,265 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-gray-100 antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply w-full bg-primary-500 text-white py-2.5 px-4 rounded-lg
+           font-semibold hover:bg-primary-600 transition-colors duration-200
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-accent {
+    @apply w-full bg-accent-400 text-gray-900 py-2.5 px-4 rounded-lg
+           font-semibold hover:bg-accent-500 transition-colors duration-200
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2.5 bg-gray-800 border border-gray-600 rounded-lg
+           text-gray-100 placeholder-gray-400
+           focus:outline-none focus:ring-2 focus:ring-accent-400 focus:border-transparent
+           transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-gray-800 rounded-xl shadow-lg border border-gray-700 p-6;
+  }
+}
+
+/* Custom scrollbar for detection list */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Rakshyak Auth Styles */
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.6; }
+  50% { transform: scale(1); opacity: 0.2; }
+  100% { transform: scale(0.8); opacity: 0.6; }
+}
+
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(245, 158, 11, 0.1); }
+  50% { box-shadow: 0 0 40px rgba(245, 158, 11, 0.2); }
+}
+
+/* Rover animations */
+@keyframes rover-hover {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes wheel-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes arm-sway {
+  0%, 100% { transform: rotate(0deg); }
+  30% { transform: rotate(-6deg); }
+  70% { transform: rotate(4deg); }
+}
+
+@keyframes camera-scan {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(12deg); }
+  75% { transform: rotate(-8deg); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+@keyframes blink-slow {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes scan-beam {
+  0%, 100% { opacity: 0.3; transform: scaleX(1); }
+  50% { opacity: 0.8; transform: scaleX(1.5); }
+}
+
+@keyframes signal-wave {
+  0%, 100% { opacity: 0.4; transform: translateY(0); }
+  50% { opacity: 0.1; transform: translateY(-4px); }
+}
+
+@keyframes dust-float-1 {
+  0% { opacity: 0; transform: translate(0, 0); }
+  30% { opacity: 0.5; }
+  100% { opacity: 0; transform: translate(-20px, -12px); }
+}
+
+@keyframes dust-float-2 {
+  0% { opacity: 0; transform: translate(0, 0); }
+  40% { opacity: 0.4; }
+  100% { opacity: 0; transform: translate(-15px, -18px); }
+}
+
+@keyframes dust-float-3 {
+  0% { opacity: 0; transform: translate(0, 0); }
+  35% { opacity: 0.3; }
+  100% { opacity: 0; transform: translate(18px, -14px); }
+}
+
+.animate-rover-hover {
+  animation: rover-hover 3s ease-in-out infinite;
+}
+
+.animate-wheel-spin {
+  animation: wheel-spin 4s linear infinite;
+}
+
+.animate-arm-sway {
+  animation: arm-sway 5s ease-in-out infinite;
+}
+
+.animate-camera-scan {
+  animation: camera-scan 4s ease-in-out infinite;
+}
+
+.animate-blink {
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+.animate-blink-slow {
+  animation: blink-slow 2.5s ease-in-out infinite;
+}
+
+.animate-scan-beam {
+  animation: scan-beam 4s ease-in-out infinite;
+}
+
+.animate-signal {
+  animation: signal-wave 2s ease-in-out infinite;
+}
+
+.animate-dust-1 {
+  animation: dust-float-1 3s ease-out infinite;
+}
+
+.animate-dust-2 {
+  animation: dust-float-2 3.5s ease-out infinite 0.5s;
+}
+
+.animate-dust-3 {
+  animation: dust-float-3 4s ease-out infinite 1s;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 3s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+/* ── Homepage animations ── */
+
+@keyframes homepage-fade-in {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes terminal-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes scroll-pulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(1); }
+  50% { opacity: 0.8; transform: scaleY(1.3); }
+}
+
+.homepage-fade-in {
+  opacity: 0;
+  animation: homepage-fade-in 0.8s ease-out forwards;
+}
+
+.homepage-fade-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.homepage-fade-delay-2 {
+  animation-delay: 0.4s;
+}
+
+.homepage-fade-delay-3 {
+  animation-delay: 0.6s;
+}
+
+.terminal-cursor {
+  animation: terminal-blink 1s step-end infinite;
+}
+
+.scroll-indicator-pulse {
+  animation: scroll-pulse 2s ease-in-out infinite;
+}
+
+/* ── Auth styles ── */
+
+.auth-input {
+  @apply w-full pl-11 pr-4 py-3 bg-gray-900/80 border border-gray-600/50 rounded-lg
+         text-gray-100 placeholder-gray-500 text-sm
+         focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/50
+         transition-all duration-300;
+}
+
+.auth-input:hover {
+  @apply border-gray-500;
+}
+
+.auth-btn {
+  @apply w-full py-3 px-4 rounded-lg font-semibold text-sm tracking-wider uppercase
+         transition-all duration-300
+         disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.auth-btn-primary {
+  @apply auth-btn bg-gradient-to-r from-amber-500 to-amber-600 text-gray-900
+         hover:from-amber-400 hover:to-amber-500 hover:shadow-lg hover:shadow-amber-500/25
+         active:scale-[0.98];
+}
+
+/* ── Loading page animation ── */
+
+@keyframes loading-bar {
+  0% { width: 0%; }
+  30% { width: 45%; }
+  60% { width: 70%; }
+  80% { width: 85%; }
+  100% { width: 100%; }
+}
+
+.animate-loading-bar {
+  animation: loading-bar 2.8s ease-in-out forwards;
+}
