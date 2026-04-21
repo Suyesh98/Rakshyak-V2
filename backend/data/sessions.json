@@ -1,0 +1,285 @@
+[
+  {
+    "id": "66d5d750",
+    "user_id": "c51bcc76-8001-4c56-93ea-0910b2e7b2c2",
+    "startTime": "2026-04-04T18:09:47.441037+00:00",
+    "endTime": "2026-04-04T18:09:59.451451+00:00",
+    "duration": 12,
+    "totalDetections": 38,
+    "uniqueClasses": 1,
+    "classCounts": {
+      "keyboard": 38
+    },
+    "avgConfidence": 0.55,
+    "status": "completed"
+  },
+  {
+    "id": "3ac38249",
+    "user_id": "66cdd1f6-e030-4280-8123-17f5f3a8308e",
+    "startTime": "2026-04-19T13:57:47.285544+00:00",
+    "endTime": "2026-04-19T13:57:51.834967+00:00",
+    "duration": 4,
+    "totalDetections": 0,
+    "uniqueClasses": 0,
+    "classCounts": {},
+    "avgConfidence": 0.45,
+    "status": "completed"
+  },
+  {
+    "id": "7f8e4dbc",
+    "user_id": "66cdd1f6-e030-4280-8123-17f5f3a8308e",
+    "startTime": "2026-04-19T13:58:27.645478+00:00",
+    "endTime": "2026-04-19T13:59:40.499583+00:00",
+    "duration": 72,
+    "totalDetections": 160,
+    "uniqueClasses": 10,
+    "classCounts": {
+      "laptop": 49,
+      "keyboard": 17,
+      "tv": 3,
+      "suitcase": 19,
+      "toilet": 1,
+      "cat": 2,
+      "cell phone": 10,
+      "mouse": 1,
+      "dog": 51,
+      "person": 7
+    },
+    "avgConfidence": 0.45,
+    "status": "completed"
+  },
+  {
+    "id": "17cf25d5",
+    "user_id": "66cdd1f6-e030-4280-8123-17f5f3a8308e",
+    "startTime": "2026-04-19T13:59:43.550292+00:00",
+    "endTime": "2026-04-19T14:00:12.228190+00:00",
+    "duration": 28,
+    "totalDetections": 61,
+    "uniqueClasses": 3,
+    "classCounts": {
+      "dog": 19,
+      "person": 41,
+      "laptop": 1
+    },
+    "avgConfidence": 0.7,
+    "status": "completed"
+  },
+  {
+    "id": "ddef9a45",
+    "user_id": "66cdd1f6-e030-4280-8123-17f5f3a8308e",
+    "startTime": "2026-04-19T14:00:50.125788+00:00",
+    "endTime": "2026-04-19T14:01:16.301508+00:00",
+    "duration": 26,
+    "totalDetections": 5,
+    "uniqueClasses": 2,
+    "classCounts": {
+      "laptop": 1,
+      "cell phone": 4
+    },
+    "avgConfidence": 0.7,
+    "status": "completed"
+  },
+  {
+    "id": "af3e4d27",
+    "user_id": "66cdd1f6-e030-4280-8123-17f5f3a8308e",
+    "startTime": "2026-04-19T14:01:20.736284+00:00",
+    "endTime": "2026-04-19T14:01:30.629764+00:00",
+    "duration": 9,
+    "totalDetections": 0,
+    "uniqueClasses": 0,
+    "classCounts": {},
+    "avgConfidence": 0.7,
+    "status": "completed"
+  },
+  {
+    "id": "da84afce",
+    "user_id": "66cdd1f6-e030-4280-8123-17f5f3a8308e",
+    "startTime": "2026-04-19T14:01:34.152959+00:00",
+    "endTime": "2026-04-19T14:01:38.378446+00:00",
+    "duration": 4,
+    "totalDetections": 5,
+    "uniqueClasses": 1,
+    "classCounts": {
+      "laptop": 5
+    },
+    "avgConfidence": 0.55,
+    "status": "completed"
+  },
+  {
+    "id": "814868fa",
+    "user_id": "66cdd1f6-e030-4280-8123-17f5f3a8308e",
+    "startTime": "2026-04-19T14:00:44.989368+00:00",
+    "endTime": "2026-04-19T14:01:58.777820+00:00",
+    "duration": 73,
+    "totalDetections": 48,
+    "uniqueClasses": 3,
+    "classCounts": {
+      "laptop": 30,
+      "cell phone": 14,
+      "person": 4
+    },
+    "avgConfidence": 0.7,
+    "status": "completed"
+  },
+  {
+    "id": "b9df14f1",
+    "user_id": "66cdd1f6-e030-4280-8123-17f5f3a8308e",
+    "startTime": "2026-04-19T14:02:35.385672+00:00",
+    "endTime": "2026-04-19T14:02:57.545249+00:00",
+    "duration": 22,
+    "totalDetections": 67,
+    "uniqueClasses": 6,
+    "classCounts": {
+      "laptop": 22,
+      "person": 12,
+      "keyboard": 23,
+      "knife": 2,
+      "cat": 1,
+      "microwave": 7
+    },
+    "avgConfidence": 0.45,
+    "status": "completed"
+  },
+  {
+    "id": "429d926f",
+    "user_id": "9ef89358-8ad1-41f1-8bfd-bd1cc0f710ea",
+    "startTime": "2026-04-21T08:37:41.830275+00:00",
+    "endTime": "2026-04-21T08:38:42.425675+00:00",
+    "duration": 60,
+    "totalDetections": 19,
+    "uniqueClasses": 3,
+    "classCounts": {
+      "tv": 1,
+      "suitcase": 2,
+      "person": 16
+    },
+    "avgConfidence": 0.45,
+    "status": "completed"
+  },
+  {
+    "id": "b0ec57e0",
+    "user_id": "9ef89358-8ad1-41f1-8bfd-bd1cc0f710ea",
+    "startTime": "2026-04-21T08:39:00.208617+00:00",
+    "endTime": "2026-04-21T08:42:15.958491+00:00",
+    "duration": 195,
+    "totalDetections": 150,
+    "uniqueClasses": 8,
+    "classCounts": {
+      "suitcase": 2,
+      "bed": 3,
+      "donut": 25,
+      "refrigerator": 1,
+      "car": 1,
+      "person": 83,
+      "chair": 33,
+      "vase": 2
+    },
+    "avgConfidence": 0.45,
+    "status": "completed"
+  },
+  {
+    "id": "9b1da084",
+    "user_id": "9ef89358-8ad1-41f1-8bfd-bd1cc0f710ea",
+    "startTime": "2026-04-21T10:01:12.812990+00:00",
+    "endTime": "2026-04-21T10:02:47.712627+00:00",
+    "duration": 94,
+    "totalDetections": 217,
+    "uniqueClasses": 8,
+    "classCounts": {
+      "person": 150,
+      "book": 60,
+      "umbrella": 1,
+      "bed": 2,
+      "dining table": 1,
+      "dog": 1,
+      "teddy bear": 1,
+      "cell phone": 1
+    },
+    "avgConfidence": 0.45,
+    "status": "completed"
+  },
+  {
+    "id": "ac807221",
+    "user_id": "14d721ee-295f-4e1d-8f93-3961cfc39d90",
+    "startTime": "2026-04-21T10:39:49.098488+00:00",
+    "endTime": "2026-04-21T10:44:28.099799+00:00",
+    "duration": 279,
+    "totalDetections": 573,
+    "uniqueClasses": 16,
+    "classCounts": {
+      "person": 274,
+      "bench": 1,
+      "chair": 40,
+      "elephant": 5,
+      "skateboard": 1,
+      "suitcase": 30,
+      "potted plant": 121,
+      "motorcycle": 1,
+      "car": 4,
+      "bus": 5,
+      "wine glass": 1,
+      "parking meter": 50,
+      "fire hydrant": 1,
+      "surfboard": 37,
+      "vase": 1,
+      "cup": 1
+    },
+    "avgConfidence": 0.45,
+    "status": "completed"
+  },
+  {
+    "id": "424534a3",
+    "user_id": "14d721ee-295f-4e1d-8f93-3961cfc39d90",
+    "startTime": "2026-04-21T10:44:38.845974+00:00",
+    "endTime": "2026-04-21T10:50:08.491951+00:00",
+    "duration": 329,
+    "totalDetections": 1279,
+    "uniqueClasses": 14,
+    "classCounts": {
+      "person": 462,
+      "skateboard": 12,
+      "potted plant": 593,
+      "vase": 7,
+      "truck": 43,
+      "surfboard": 1,
+      "chair": 63,
+      "cup": 6,
+      "bench": 80,
+      "suitcase": 1,
+      "elephant": 3,
+      "tv": 2,
+      "umbrella": 1,
+      "fire hydrant": 5
+    },
+    "avgConfidence": 0.45,
+    "status": "completed"
+  },
+  {
+    "id": "cbcb69d5",
+    "user_id": "14d721ee-295f-4e1d-8f93-3961cfc39d90",
+    "startTime": "2026-04-21T10:50:23.692738+00:00",
+    "endTime": "2026-04-21T10:56:07.608016+00:00",
+    "duration": 343,
+    "totalDetections": 544,
+    "uniqueClasses": 15,
+    "classCounts": {
+      "person": 312,
+      "potted plant": 72,
+      "bench": 44,
+      "cup": 1,
+      "chair": 32,
+      "tv": 5,
+      "suitcase": 32,
+      "vase": 1,
+      "truck": 1,
+      "toilet": 1,
+      "skateboard": 12,
+      "dog": 1,
+      "wine glass": 10,
+      "parking meter": 19,
+      "airplane": 1
+    },
+    "avgConfidence": 0.45,
+    "status": "completed"
+  }
+]

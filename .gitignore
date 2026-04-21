@@ -1,0 +1,65 @@
+# Ignore Python virtual environments
+env/
+venv/
+.venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.pytest_cache/
+htmlcov/
+coverage.xml
+
+# mypy
+.mypy_cache/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Node
+node_modules/
+
+# Large model and binary files (candidates for Git LFS)
+yolov8n.pt
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.tflite
+*.pb
+*.bin
+*.npy
+
+# Archives
+*.zip
+*.tar.gz
+*.tar

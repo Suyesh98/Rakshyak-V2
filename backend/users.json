@@ -1,0 +1,34 @@
+[
+  {
+    "id": "707df6f1-0c5c-4b58-8135-e7a933416b77",
+    "full_name": "Sugam Shrestha",
+    "email": "sugamshrestha@gmail.com",
+    "username": "sugamshrestha",
+    "hashed_password": "$2b$12$wpyhCCdaJ69H2KH3rn7KXOsEbfEHDkuccc07RwkV8yNUf5WZuTulC",
+    "is_active": true
+  },
+  {
+    "id": "66cdd1f6-e030-4280-8123-17f5f3a8308e",
+    "full_name": "Suyesh Neupane",
+    "email": "neupanesuyesh@gmail.com",
+    "username": "neupanesuyesh",
+    "hashed_password": "$2b$12$etCTKIubvWEz.ku0sRoPDObeBQVYP7NpzOnOUWkmM.et/FZzEze8S",
+    "is_active": true
+  },
+  {
+    "id": "9ef89358-8ad1-41f1-8bfd-bd1cc0f710ea",
+    "full_name": "Dipesh Buda",
+    "email": "dipeshbuda@gmail.com",
+    "username": "dipeshbuda",
+    "hashed_password": "$2b$12$bfvWqlWZR7UPjoORiy4QB.NVY9GXwQ4tXOKUY4OCJfBCImfd0UvJe",
+    "is_active": true
+  },
+  {
+    "id": "14d721ee-295f-4e1d-8f93-3961cfc39d90",
+    "full_name": "Army Man",
+    "email": "armyman@gmail.com",
+    "username": "armyman",
+    "hashed_password": "$2b$12$2ODbY8P.iUhmCVZ1YwwCjO.swBL3rBvZNv8XbuIRhEYn1WUBPZhQi",
+    "is_active": true
+  }
+]
